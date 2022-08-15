@@ -1,0 +1,55 @@
+.body {
+    margin-top: 6rem;
+}
+.gallery {
+    position: relative;
+    padding: 0;
+    width: 62.5rem;
+    margin: 0 auto;
+}
+.gallery__info {
+    height: 25rem;
+    width: 30%;
+    background: lightgray;
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+    padding: 4rem 2rem;
+    box-sizing: border-box;
+}
+.gallery__main-slide {
+    position: absolute;
+    top: 0;
+    left: 18.75rem;
+    height: 25rem;
+    width: 70%;
+    padding-top: 11.5625rem;
+    background: lightslategray;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.875rem;
+    font-weight: bold;
+    color: white;
+    box-sizing: border-box;  
+}
+.gallery__slides {  
+    width: 100%;
+    height: 10rem;
+    padding-top: 1.875rem;
+    padding-left: 2.34375rem;
+    background: lightskyblue;
+    box-sizing: border-box;
+}
+.slides {    
+    padding: 0;
+    margin: auto;
+}
+.slides__slide {
+    display: inline-block;
+    list-style: none;
+    width: 6.25rem;
+    height: 6.25rem;
+    padding: 0;
+    margin-right: 2.064rem;
+    background: rgb(221, 237, 221);
+    color: lightskyblue;
+}
