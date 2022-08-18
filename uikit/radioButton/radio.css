@@ -1,3 +1,14 @@
+.radio__conteiner {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 6.5rem;
+  height: 4rem;
+  background-color: var(--area-background-color);
+  border: 0.0625rem dashed var(--area-border-color);
+  border-radius: 0.3125rem;
+  box-sizing: border-box;
+}
 .radio {
   position: relative;
   margin: 0;
@@ -16,10 +27,10 @@
   background-color: var(--item-background-color);
   box-sizing: border-box;
 }
-.radio__item:active {
+/* .radio__item:active {
   background-color: var(--item-backgroung-color-activ);
   border: none;
-}
+} */
 .radio__icon {
   position: absolute;
   fill: var(--item-background-color);
