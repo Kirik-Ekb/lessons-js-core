@@ -4,30 +4,18 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- <link rel="stylesheet" href="../uikit.css" /> -->
+    <link rel="stylesheet" href="../uikit.css" />
     <link rel="stylesheet" href="radio.css" />
-    <title>radioButton</title>
+    <title>radio</title>
   </head>
   <body>
-    <div class="radio__conteiner">
-      <!-- --------------------radio------------------ -->
+    <div class="conteiner radio_conteiner">
+      <!-- --------------------start radio disable------------------ -->
       <div class="radio">
-        <label class="radio__item">
-          <input class="radio__item" type="radio" />
-          <!-- <svg
-            class="radio__icon"
-            viewBox="0 0 16 16"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <circle cx="8" cy="8" r="4" stroke="none" />
-          </svg> -->
-        </label>
-      </div>
-      <!-- --------------------radio------------------ -->
-      <!-- --------------------radio------------------ -->
-      <div class="radio">
-        <label class="radio">
-          <input class="radio__item" type="radio" checked />
+        <input class="radio__item" type="radio" id="radio-1" name="uikit" />
+        <label class="radio__label" for="radio-1">
+          <span class="radio__text"></span>
+
           <svg
             class="radio__icon"
             viewBox="0 0 16 16"
@@ -37,7 +25,29 @@
           </svg>
         </label>
       </div>
-      <!-- --------------------radio------------------ -->
+      <!-- --------------------end radio disable------------------ -->
+      <!-- --------------------start radio checked------------------ -->
+      <div class="radio">
+        <input
+          class="radio__item"
+          type="radio"
+          id="radio-2"
+          name="uikit"
+          checked
+        />
+        <label class="radio__label" for="radio-2">
+          <span class="radio__text"></span>
+
+          <svg
+            class="radio__icon"
+            viewBox="0 0 16 16"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <circle cx="8" cy="8" r="4" stroke="none" />
+          </svg>
+        </label>
+      </div>
+      <!-- --------------------end radio checked------------------ -->
     </div>
   </body>
 </html>

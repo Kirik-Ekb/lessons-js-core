@@ -1,22 +1,89 @@
-.checkbox__conteiner {
+:root {
+  --uikit-area-background-color: #e5e5e5;
+  --uikit-area-border-color: #8055ff;
+  --button-area-background-color: #459df5;
+  --input-border-color: #459df5;
+  --input-border-color-active: #f53152;
+  --placeholder-color: #bad8f5;
+  --input-background-color-disable: #bad8f5;
+  --item-background-color: #ffffff;
+  --item-border-color: #bad8f5;
+  --item-backgroung-color-activ: #459df5;
+  --button-color-text-black: #000000;
+}
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap");
+
+.conteiner {
   display: flex;
-  justify-content: space-evenly;
+  flex-direction: column;
   align-items: center;
-  width: 6.5rem;
-  height: 4rem;
-  background-color: var(--area-background-color);
-  border: 0.0625rem dashed var(--area-border-color);
+  justify-content: space-between;
+  padding-right: 1.4375rem;
+  padding-left: 1.4375rem;
+  background-color: var(--uikit-area-background-color);
+  border: 0.0625rem dashed var(--uikit-area-border-color);
   border-radius: 0.3125rem;
   box-sizing: border-box;
 }
-.radio__conteiner {
+.conteiner-main {
   display: flex;
-  justify-content: space-evenly;
-  align-items: center;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 2rem;
+  padding: 2rem;
+}
+
+.checkbox_conteiner {
   width: 6.5rem;
   height: 4rem;
-  background-color: var(--area-background-color);
-  border: 0.0625rem dashed var(--area-border-color);
-  border-radius: 0.3125rem;
-  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.radio_conteiner {
+  width: 6.5rem;
+  height: 4rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.searchbar_conteiner {
+  width: 22rem;
+  height: 12rem;
+  padding: 2.9375rem;
+}
+.input_conteiner {
+  width: 22rem;
+  height: 22.5rem;
+  padding: 3rem;
+}
+.conteiner_button {
+  width: 36rem;
+  height: 23.5rem;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 3rem;
+  padding-top: 2.9375rem;
+  padding-left: 2.9375rem;
+  padding-right: 5.9375rem;
+}
+.dropdowns_conteiner {
+  position: relative;
+  width: 42rem;
+  height: 32rem;
+}
+.page-heder_conteiner {
+  position: relative;
+  width: 49.125rem;
+  height: 13rem;
+  padding: 3rem;
+}
+.button {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1rem;
 }

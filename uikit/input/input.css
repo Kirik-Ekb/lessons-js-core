@@ -1,0 +1,62 @@
+.input-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 16rem;
+  height: 3.5rem;
+  font-family: "Ubuntu", sans-serif;
+  font-size: 0.8125rem;
+}
+.input-item__label {
+  height: 1rem;
+}
+.input-item__input {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 0.5rem;
+  width: 16rem;
+  height: 2rem;
+  gap: 0.25rem;
+  padding: 0.1875rem 0.1875rem 0.1875rem 0.4375rem;
+  background-color: var(--item-background-color);
+  border: 0.0625rem solid var(--input-border-color);
+  border-radius: 0.25rem;
+  box-sizing: border-box;
+}
+.input-item__area {
+  flex-grow: 1;
+  height: 1rem;
+  padding: 0;
+  outline: none;
+  border: none;
+  line-height: 1rem;
+  font-family: inherit;
+  box-sizing: border-box;
+}
+.input-item__area::-webkit-input-placeholder {
+  color: var(--placeholder-color);
+}
+
+.button-item {
+  display: none;
+}
+.input-item_entry .input-item__input {
+  border-color: var(--input-border-color-active);
+}
+.input-item_entry .button-item {
+  display: block;
+}
+.input-item_disable .button-item {
+  display: block;
+}
+.input-item__area:focus ~ .button-item {
+  display: block;
+}
+
+.input-item_disable .input-item__input {
+  background-color: var(--input-background-color-disable);
+}
+.input-item_disable .input-item__area {
+  background-color: var(--input-background-color-disable);
+}
