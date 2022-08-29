@@ -5,134 +5,96 @@
   display: flex;
   flex-direction: column;
   width: 10rem;
-  height: 13rem;
   background-color: var(--item-background-color);
   justify-content: space-between;
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
   border-radius: 0.5rem;
 }
-.checkbox {
-  width: 10rem;
+.checkbox_status-multiple {
   height: 2rem;
-
-  align-content: stretch;
-}
-.checkbox__label {
-  padding: 0.5rem 0 0.5rem 1rem;
-}
-.checkbox__text {
-  position: absolute;
-  left: 2.5rem;
-  font-family: "Ubuntu", sans-serif;
-  font-size: 0.8125rem;
-  line-height: 1rem;
-}
-.checkbox__item {
-  position: relative;
-}
-.checkbox__icon {
-  left: 1.125rem;
-}
-.checkbox__item:checked + .checkbox__text {
-  color: var(--item-backgroung-color-activ);
+  margin-left: 1rem;
+  padding-top: 0.5rem;
+  box-sizing: border-box;
 }
 
-.radio {
-  height: 2rem;
-}
-.status {
+.status-single {
   position: absolute;
   top: 4rem;
   left: 16rem;
   display: flex;
   flex-direction: column;
   width: 10rem;
-  height: 13rem;
   background-color: var(--item-background-color);
   justify-content: space-between;
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
   border-radius: 0.5rem;
 }
-.radio__label {
+.radio_status-single {
+  height: 2rem;
+  margin-left: 1rem;
+  padding-top: 0.5rem;
+  box-sizing: border-box;
+}
+.radio_status-single .radio__input {
+  display: none;
+}
+.radio_status-single .radio__text {
+  padding: 0;
+}
+.radio_status-single .radio__label {
   border: none;
 }
-.radio__item:checked + .radio__label {
+.radio__input:checked ~ .radio__text {
   color: var(--item-backgroung-color-activ);
-  background-color: var(--item-background-color);
 }
-.table-actions {
+.go-to-page {
   position: absolute;
   top: 22rem;
   left: 3rem;
-  display: flex;
-  flex-direction: column;
+  width: 10rem;
   background-color: var(--item-background-color);
-  justify-content: space-between;
   padding: 1rem;
   border-radius: 0.5rem;
+  box-sizing: border-box;
 }
-.input-item_table-actions {
-  width: 8rem;
-  height: 3.5rem;
-}
-.input-item__input {
-  width: 8rem;
-}
-.input-item__area {
-  width: 7.25rem;
-}
-.table-action-delete {
+.table-activ-delete {
   position: absolute;
-  width: 10rem;
-  height: 7rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
   top: 22rem;
   left: 16rem;
-  display: flex;
-  flex-direction: column;
+  width: 10rem;
   background-color: var(--item-background-color);
-  align-items: center;
-  justify-content: space-between;
   padding: 1rem;
   border-radius: 0.5rem;
   box-sizing: border-box;
 }
-.table-action-delete__text {
-  font-family: "Ubuntu", sans-serif;
+.table-activ-delete__text {
+  font-family: "Ubuntu";
   font-size: 0.8125rem;
-  line-height: 1rem;
 }
-.button-item_table {
-  width: 8rem;
+.button_table-activ-delete {
+  width: 100%;
 }
-
 .theme-switcher {
   position: absolute;
-  width: 10rem;
-  height: 7rem;
-  top: 22rem;
-  left: 29rem;
   display: flex;
   flex-direction: column;
+  gap: 0.5rem;
+  top: 22rem;
+  left: 29rem;
+  width: 10rem;
   background-color: var(--item-background-color);
-  align-items: center;
-  justify-content: space-between;
   padding: 1rem;
   border-radius: 0.5rem;
   box-sizing: border-box;
 }
-.button-item__icon_theme-switcher {
-  fill: var(--item-background-color);
+.button_theme-switcher {
+  width: 100%;
+}
+.button_theme-switcher .button__icon {
   opacity: 100%;
-}
-.button-item__icon_theme-switcher_delete {
-  fill: var(--input-border-color);
-}
-
-.table-action-delete__text {
-  text-align: start;
-}
-.button-item_theme-switcher {
-  width: 8rem;
 }

@@ -9,13 +9,13 @@
     <title>button</title>
   </head>
   <body>
-    <div class="conteiner conteiner_button">
-      <!-- --------------start regular----------------------------- -->
-      <div class="button">
-        <!-- -------------start button full-------------- -->
-        <div class="button-item">
+    <div class="conteiner conteiner_button-block">
+      <!-- -----------------start regular-------------------------- -->
+      <div class="conteiner_button">
+        <!-- -------------start button full------------ -->
+        <button class="button">
           <svg
-            class="button-item__icon"
+            class="button__icon"
             viewBox="0 0 16 16"
             xmlns="http://www.w3.org/2000/svg"
           >
@@ -25,24 +25,20 @@
               fill="none"
             />
           </svg>
-          <button class="button-item__button">
-            <span class="button-item__text">Text here</span>
-          </button>
-        </div>
+          <span class="button__text">Text here</span>
+        </button>
         <!-- -------------end button full-------------- -->
 
-        <!-- -------------start button only text-------------- -->
-        <div class="button-item button-item_no-icon">
-          <button class="button-item__button">
-            <span class="button-item__text">Text here</span>
-          </button>
-        </div>
-        <!-- -------------end button only text-------------- -->
+        <!-- ---------start button only text----------- -->
+        <button class="button">
+          <span class="button__text">Text here</span>
+        </button>
+        <!-- ----------end button only text------------ -->
 
-        <!-- -------------start button only icon-------------- -->
-        <div class="button-item button-item_no-text">
+        <!-- ---------start button only icon----------- -->
+        <button class="button button_icon-only">
           <svg
-            class="button-item__icon"
+            class="button__icon"
             viewBox="0 0 16 16"
             xmlns="http://www.w3.org/2000/svg"
           >
@@ -52,17 +48,17 @@
               fill="none"
             />
           </svg>
-          <button class="button-item__button"></button>
-        </div>
-        <!-- -------------end button only icon-------------- -->
+        </button>
+        <!-- ---------end button only icon------------- -->
       </div>
+      <!-- --------------------end regular------------------------- -->
 
       <!-- ------------start regular transparent blue-------------- -->
-      <div class="button">
-        <!-- -------------start button regular full transparent text blue-------------- -->
-        <div class="button-item button-item_transparent button-item_text-blue">
+      <div class="conteiner_button">
+        <!-- -------------start button full-------------- -->
+        <button class="button button_transparent-blue">
           <svg
-            class="button-item__icon"
+            class="button__icon"
             viewBox="0 0 16 16"
             xmlns="http://www.w3.org/2000/svg"
           >
@@ -72,28 +68,20 @@
               fill="none"
             />
           </svg>
-          <button class="button-item__button">
-            <span class="button-item__text">Text here</span>
-          </button>
-        </div>
-        <!-- -------------end button regular full transparent text blue-------------- -->
+          <span class="button__text">Text here</span>
+        </button>
+        <!-- ---------------end button full-------------- -->
 
-        <!-- -------------start button regular only text transparent text blue-------------- -->
-        <div
-          class="button-item button-item_no-icon button-item_transparent button-item_text-blue"
-        >
-          <button class="button-item__button">
-            <span class="button-item__text">Text here</span>
-          </button>
-        </div>
-        <!-- -------------end button regular only text transparent text blue-------------- -->
+        <!-- -------------start button only text--------- -->
+        <button class="button button_transparent-blue">
+          <span class="button__text">Text here</span>
+        </button>
+        <!-- -------------end button only text----------- -->
 
-        <!-- -------------start button regular only icon transparent text blue-------------- -->
-        <div
-          class="button-item button-item_no-text button-item_transparent button-item_text-blue"
-        >
+        <!-- -----------start button only icon----------- -->
+        <button class="button button_icon-only button_transparent-blue">
           <svg
-            class="button-item__icon"
+            class="button__icon"
             viewBox="0 0 16 16"
             xmlns="http://www.w3.org/2000/svg"
           >
@@ -103,17 +91,17 @@
               fill="none"
             />
           </svg>
-          <button class="button-item__button"></button>
-        </div>
-        <!-- -------------end button regular only icon transparent text blue-------------- -->
+        </button>
+        <!-- -----------end button only icon------------- -->
       </div>
+      <!-- ------------end regular transparent blue---------------- -->
 
-      <!-- -----------start regular transparent black-------------- -->
-      <div class="button">
-        <!-- -------------start button regular full transparent black-------------- -->
-        <div class="button-item button-item_transparent button-item_text-black">
+      <!-- ------------start regular transparent black------------- -->
+      <div class="conteiner_button">
+        <!-- -------------start button full-------------- -->
+        <button class="button button_transparent-black">
           <svg
-            class="button-item__icon"
+            class="button__icon"
             viewBox="0 0 16 16"
             xmlns="http://www.w3.org/2000/svg"
           >
@@ -123,28 +111,20 @@
               fill="none"
             />
           </svg>
-          <button class="button-item__button">
-            <span class="button-item__text">Text here</span>
-          </button>
-        </div>
-        <!-- -------------end button regular full transparent black-------------- -->
+          <span class="button__text">Text here</span>
+        </button>
+        <!-- ---------------end button full-------------- -->
 
-        <!-- -------------start button regular only text transparent black-------------- -->
-        <div
-          class="button-item button-item_no-icon button-item_transparent button-item_text-black"
-        >
-          <button class="button-item__button">
-            <span class="button-item__text">Text here</span>
-          </button>
-        </div>
-        <!-- -------------end button regular only text transparent black-------------- -->
+        <!-- -------------start button only text--------- -->
+        <button class="button button_transparent-black">
+          <span class="button__text">Text here</span>
+        </button>
+        <!-- -------------end button only text----------- -->
 
-        <!-- -------------start button regular only icon transparent black-------------- -->
-        <div
-          class="button-item button-item_no-text button-item_transparent button-item_text-black"
-        >
+        <!-- -----------start button only icon----------- -->
+        <button class="button button_icon-only button_transparent-black">
           <svg
-            class="button-item__icon"
+            class="button__icon"
             viewBox="0 0 16 16"
             xmlns="http://www.w3.org/2000/svg"
           >
@@ -154,18 +134,17 @@
               fill="none"
             />
           </svg>
-          <button class="button-item__button"></button>
-        </div>
-        <!-- -------------end button regular only icon transparent-black-------------- -->
+        </button>
+        <!-- -----------end button only icon------------- -->
       </div>
-      <!-- ----------------end regular----------------------------- -->
+      <!-- ------------end regular transparent black--------------- -->
 
-      <!-- --------------start small----------------------------- -->
-      <div class="button">
-        <!-- -------------start button small full-------------- -->
-        <div class="button-item button-item_small">
+      <!-- ----------------start small----------------------------- -->
+      <div class="conteiner_button">
+        <!-- -------------start button full------------ -->
+        <button class="button button_small">
           <svg
-            class="button-item__icon"
+            class="button__icon"
             viewBox="0 0 16 16"
             xmlns="http://www.w3.org/2000/svg"
           >
@@ -175,24 +154,20 @@
               fill="none"
             />
           </svg>
-          <button class="button-item__button">
-            <span class="button-item__text">Text here</span>
-          </button>
-        </div>
-        <!-- -------------end button small full-------------- -->
+          <span class="button__text">Text here</span>
+        </button>
+        <!-- -------------end button full-------------- -->
 
-        <!-- -------------start button small only text-------------- -->
-        <div class="button-item button-item_small button-item_no-ico">
-          <button class="button-item__button">
-            <span class="button-item__text">Text here</span>
-          </button>
-        </div>
-        <!-- -------------end button small only text-------------- -->
+        <!-- ---------start button only text----------- -->
+        <button class="button button_small">
+          <span class="button__text">Text here</span>
+        </button>
+        <!-- ----------end button only text------------ -->
 
-        <!-- -------------start button small only icon-------------- -->
-        <div class="button-item button-item_small button-item_no-text">
+        <!-- ---------start button only icon----------- -->
+        <button class="button button_icon-only button_small">
           <svg
-            class="button-item__icon"
+            class="button__icon"
             viewBox="0 0 16 16"
             xmlns="http://www.w3.org/2000/svg"
           >
@@ -202,19 +177,17 @@
               fill="none"
             />
           </svg>
-          <button class="button-item__button"></button>
-        </div>
-        <!-- -------------end button small only icon-------------- -->
+        </button>
+        <!-- ---------end button only icon------------- -->
       </div>
-      <!-- --------------start small transparent text blue--------- -->
+      <!-- ---------------end small-------------------------------- -->
 
-      <div class="button">
-        <!-- -------------start button small full transparent text blue-------------- -->
-        <div
-          class="button-item button-item_small button-item_transparent button-item_text-blue"
-        >
+      <!-- ------------start small transparent blue---------------- -->
+      <div class="conteiner_button">
+        <!-- -------------start button full-------------- -->
+        <button class="button button_transparent-blue button_small">
           <svg
-            class="button-item__icon"
+            class="button__icon"
             viewBox="0 0 16 16"
             xmlns="http://www.w3.org/2000/svg"
           >
@@ -224,28 +197,22 @@
               fill="none"
             />
           </svg>
-          <button class="button-item__button">
-            <span class="button-item__text">Text here</span>
-          </button>
-        </div>
-        <!-- -------------end button small full transparent text blue-------------- -->
+          <span class="button__text">Text here</span>
+        </button>
+        <!-- ---------------end button full-------------- -->
 
-        <!-- -------------start button small only text transparent text blue-------------- -->
-        <div
-          class="button-item button-item_small button-item_transparent button-item_text-blue"
-        >
-          <button class="button-item__button">
-            <span class="button-item__text">Text here</span>
-          </button>
-        </div>
-        <!-- -------------end button small only text transparent text blue-------------- -->
+        <!-- -------------start button only text--------- -->
+        <button class="button button_transparent-blue button_small">
+          <span class="button__text">Text here</span>
+        </button>
+        <!-- -------------end button only text----------- -->
 
-        <!-- -------------start button small only icon transparent text blue-------------- -->
-        <div
-          class="button-item button-item_small button-item_no-text button-item_transparent button-item_text-blue"
+        <!-- -----------start button only icon----------- -->
+        <button
+          class="button button_icon-only button_transparent-blue button_small"
         >
           <svg
-            class="button-item__icon"
+            class="button__icon"
             viewBox="0 0 16 16"
             xmlns="http://www.w3.org/2000/svg"
           >
@@ -255,11 +222,10 @@
               fill="none"
             />
           </svg>
-          <button class="button-item__button"></button>
-        </div>
-        <!-- -------------end button small only icon transparent text blue-------------- -->
+        </button>
+        <!-- -----------end button only icon------------- -->
       </div>
-      <!-- --------------end small----------------------------- -->
+      <!-- -----------end small transparent blue------------------- -->
     </div>
   </body>
 </html>

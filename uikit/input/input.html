@@ -7,88 +7,83 @@
     <link rel="stylesheet" href="../uikit.css" />
     <link rel="stylesheet" href="../button/button.css" />
     <link rel="stylesheet" href="input.css" />
-
     <title>input</title>
   </head>
   <body>
-    <div class="conteiner input_conteiner">
-      <!-- ------------start input---------------- -->
-      <div class="input-item">
-        <label class="input-item__label" for="input-1"
-          >Дата и время заказа</label
-        >
-        <div class="input-item__input">
+    <div class="conteiner conteiner_input">
+      <!-- ------------start input empty---------------- -->
+      <div class="input input_empty">
+        <label class="input__label" for="input-box1">Дата и время заказа</label>
+        <div class="input__item">
           <input
-            class="input-item__area"
-            id="input-1"
+            class="input__area"
+            id="input-box1"
             type="text"
             placeholder="Введите"
             value=""
           />
-          <div
-            class="button-item button-item_small button-item_no-text button-item_transparent button-item_text-blue"
+          <button
+            class="button button_icon-only button_transparent-blue button_small"
           >
             <svg
-              class="button-item__icon"
+              class="button__icon"
               viewBox="0 0 16 16"
+              fill="none"
+              stroke="#8055FF"
               xmlns="http://www.w3.org/2000/svg"
             >
               <path d="M12.5 3.5L3.5 12.5M3.5 3.5L12.5 12.5" fill="none" />
             </svg>
-            <button class="button-item__button"></button>
-          </div>
+          </button>
         </div>
       </div>
-      <!-- ------------end input---------------- -->
+      <!-- ------------end input empty---------------- -->
 
-      <!-- ------------start input entry---------------- -->
-      <div class="input-item input-item_entry">
-        <label class="input-item__label" for="input-2"
-          >Дата и время заказа</label
-        >
-        <div class="input-item__input">
+      <!-- ------------start input incorrect---------------- -->
+      <div class="input input_incorrect">
+        <label class="input__label" for="input-box2">Дата и время заказа</label>
+        <div class="input__item">
           <input
-            class="input-item__area"
-            id="input-2"
+            class="input__area"
+            id="input-box2"
             type="text"
             placeholder="Введите"
             value="06.12.2021"
           />
-          <div
-            class="button-item button-item_small button-item_no-text button-item_transparent button-item_text-blue"
+          <button
+            class="button button_icon-only button_transparent-blue button_small"
           >
             <svg
-              class="button-item__icon"
+              class="button__icon"
               viewBox="0 0 16 16"
+              fill="none"
+              stroke="#8055FF"
               xmlns="http://www.w3.org/2000/svg"
             >
               <path d="M12.5 3.5L3.5 12.5M3.5 3.5L12.5 12.5" fill="none" />
             </svg>
-            <button class="button-item__button"></button>
-          </div>
+          </button>
         </div>
       </div>
-      <!-- ------------end input entry---------------- -->
+      <!-- ------------end input incorrect---------------- -->
 
       <!-- ------------start input disable---------------- -->
-      <div class="input-item input-item_disable">
-        <label class="input-item__label" for="input-3"
-          >Дата и время заказа</label
-        >
-        <div class="input-item__input">
+      <div class="input input_disabled">
+        <label class="input__label" for="input-box3">Дата и время заказа</label>
+        <div class="input__item">
           <input
-            class="input-item__area"
-            id="input-3"
+            class="input__area"
+            id="input-box3"
             type="text"
             placeholder="Введите"
             value="06.12.2021"
             disabled
           />
-          <div
-            class="button-item button-item_small button-item_no-text button-item_transparent button-item_text-blue"
+          <button
+            class="button button_icon-only button_transparent-blue button_small"
           >
             <svg
-              class="button-item__icon"
+              class="button__icon"
               viewBox="0 0 16 16"
               xmlns="http://www.w3.org/2000/svg"
             >
@@ -103,8 +98,7 @@
                 stroke="none"
               />
             </svg>
-            <button class="button-item__button"></button>
-          </div>
+          </button>
         </div>
       </div>
       <!-- ------------end input desable---------------- -->
