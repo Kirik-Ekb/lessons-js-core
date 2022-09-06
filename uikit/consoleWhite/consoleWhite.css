@@ -1,0 +1,189 @@
+.console {
+  width: 100vw;
+  padding: 2rem 3rem 0 3rem;
+  background-color: var(--item-background-color);
+  box-sizing: border-box;
+}
+.show-switcher_console-white {
+  width: 100%;
+}
+.filter {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+.filter__wrapper {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+}
+.filter__wrapper_search {
+  justify-content: space-between;
+}
+.searchbar_filter__item {
+  width: 20rem;
+}
+.filter__item-search {
+  display: inline-flex;
+  gap: 1rem;
+}
+.filter__wrapper_input {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  margin-bottom: 2rem;
+  padding: 1rem;
+  background-color: var(--backgrond-color-filter-wrapper);
+  border-radius: 0.5rem;
+}
+.filter__item-input {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 18rem;
+  gap: 0.25rem;
+  box-sizing: border-box;
+}
+.input_filter__wrapper {
+  position: relative;
+  width: 12rem;
+}
+.status-multiple_filter {
+  position: absolute;
+  top: 3.75rem;
+  left: 2rem;
+  width: 10rem;
+  box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.1), 0px 4px 8px rgba(0, 0, 0, 0.1),
+    0px 2px 2px rgba(0, 0, 0, 0.1);
+}
+.table {
+  width: 100%;
+}
+.table__header {
+  display: flex;
+  flex-direction: row;
+  padding: 0 0.5rem;
+  background-color: var(--input-border-color);
+}
+.table__header .table__cell {
+  color: var(--item-background-color);
+}
+.table__cell {
+  padding: 0.75rem 0.5rem;
+  font-family: "Ubuntu";
+  font-size: 0.8125rem;
+  gap: 0.25rem;
+  fill: var(--item-background-color);
+  box-sizing: border-box;
+}
+.table__icon {
+  width: 1rem;
+  height: 1rem;
+}
+.table__cell_first {
+  width: 2rem;
+}
+.table__cell_second {
+  width: 6.75rem;
+}
+.table__cell_third {
+  display: inline-flex;
+  width: 11rem;
+}
+.table__cell_fourth {
+  display: inline-flex;
+  width: 11rem;
+}
+.table__cell_fifth {
+  display: inline-flex;
+  width: 6rem;
+}
+.table__cell_sixth {
+  display: inline-flex;
+  width: 8rem;
+}
+.table__line {
+  display: flex;
+  flex-direction: row;
+  padding: 0 0.5rem;
+  border-bottom: 1px solid var(--backgrond-color-filter-wrapper);
+}
+.table__body {
+  overflow: auto;
+  height: 25rem;
+  margin-bottom: 2.5rem;
+}
+.table__line .table__cell_fourth {
+  fill: var(--color-table-icon);
+}
+.table__line_third .table__cell_fourth .table__icon {
+  fill: var(--item-backgroung-color-activ);
+}
+.table__line_fourth .table__cell_fourth {
+  color: var(--color-table-icon-green);
+}
+.table__line_fourth .table__cell_fourth .table__icon {
+  fill: var(--color-table-icon-green);
+}
+.table__line_fifth .table__cell_fourth {
+  opacity: 50%;
+}
+.table__line_seventh .table__cell_fourth {
+  color: var(--color-table-icon-green);
+}
+.table__line_seventh .table__cell_fourth .table__icon {
+  fill: var(--color-table-icon-green);
+}
+.table__line_eighth .table__cell_fourth {
+  color: var(--color-table-icon-green);
+}
+.table__line_eighth .table__cell_fourth .table__icon {
+  fill: var(--color-table-icon-green);
+}
+.table__line_tenth .table__cell_fourth {
+  opacity: 50%;
+}
+.table__footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  box-sizing: border-box;
+  height: 2.5rem;
+  padding: 0.5rem 1rem;
+  color: var(--item-backgroung-color-activ);
+  background-color: var(--backgrond-color-filter-wrapper);
+  font-family: "Ubuntu";
+  font-size: 0.8125rem;
+}
+.table__bunch-action {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  align-items: center;
+}
+.table__footer .button {
+  padding: 0.25rem 0.5rem;
+}
+.table__footer .button .button__icon {
+  opacity: 100%;
+}
+.button_delete {
+  background-color: var(--input-border-color-active);
+}
+.table__bunch-action .table-activ-delete {
+  position: absolute;
+  width: 10rem;
+  top: -7.25rem;
+  left: 17rem;
+  color: var(--button-color-text-black);
+  box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.1), 0px 4px 8px rgba(0, 0, 0, 0.1),
+    0px 2px 2px rgba(0, 0, 0, 0.1);
+}
+.table__pagination {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}

@@ -39,7 +39,7 @@
   color: var(--placeholder-color);
 }
 .input_empty .button {
-  display: none;
+  /* display: none; */
 }
 .input_incorrect .input__item {
   border-color: var(--input-border-color-active);
@@ -55,6 +55,6 @@
   fill: var(--button-color-text-black);
   stroke: var(--button-color-text-black);
 }
-.input_empty .input__area:focus-within ~ .button {
+/* .input_empty .input__area:focus-within ~ .button {
   display: block;
-}
+} */

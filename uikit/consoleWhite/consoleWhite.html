@@ -1,0 +1,985 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="../uikit.css" />
+    <link rel="stylesheet" href="../button/button.css" />
+    <link rel="stylesheet" href="../pageHeder/pageHeder.css" />
+    <link rel="stylesheet" href="../searchbar/searchbar.css" />
+    <link rel="stylesheet" href="../input/input.css" />
+    <link rel="stylesheet" href="../checkbox/checkbox.css" />
+    <link rel="stylesheet" href="../dropdowns/dropdowns.css" />
+    <link rel="stylesheet" href="consoleWhite.css" />
+
+    <title>console-white</title>
+  </head>
+  <body>
+    <div class="console">
+      <!-- ------------------PAGEHEDER------------------------ -->
+      <div class="show-switcher show-switcher_console-white">
+        <span class="show-switcher__text">Список заказов</span>
+        <!-- -------------start button full-------------- -->
+        <button class="button button_transparent-blue">
+          <svg
+            class="button__icon"
+            viewBox="0 0 16 16"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <circle cx="8" cy="8" r="4" stroke="none" />
+            <path d="M15 9L16 8L15 7H13V9H15Z" stroke="none" />
+            <path d="M1 9L0 8L1 7H3V9H1Z" stroke="none" />
+            <path d="M7 15L8 16L9 15V13H7V15Z" stroke="none" />
+            <path d="M7 1L8 0L9 1V3H7V1Z" stroke="none" />
+            <path
+              d="M12.5 14H14L14 12.5L12.5 11L11 12.5L12.5 14Z"
+              stroke="none"
+            />
+            <path d="M2 3.5L2 2L3.5 2L5 3.5L3.5 5L2 3.5Z" stroke="none" />
+            <path d="M3.5 14H2L2 12.5L3.5 11L5 12.5L3.5 14Z" stroke="none" />
+            <path d="M14 3.5V2L12.5 2L11 3.5L12.5 5L14 3.5Z" stroke="none" />
+          </svg>
+          <span class="button__text">Светлая тема</span>
+        </button>
+        <!-- ---------------end button full-------------- -->
+      </div>
+      <!-- ------------------PAGEHEDER------------------------ -->
+
+      <!-- -------------------FILTER-------------------------- -->
+      <div class="filter">
+        <!-- ------------filter search------------------ -->
+        <div class="filter__wrapper filter__wrapper_search">
+          <div class="filter__item-search">
+            <!-- ------------start searchbar empty---------------- -->
+            <div class="searchbar searchbar_empty searchbar_filter__item">
+              <svg
+                class="searchbar__icon"
+                viewBox="0 0 16 16"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M10.0355 10.0355C11.9882 8.08291 11.9882 4.91709 10.0355 2.96447C8.08291 1.01184 4.91709 1.01184 2.96447 2.96447C1.01184 4.91709 1.01184 8.08291 2.96447 10.0355C4.91709 11.9882 8.08291 11.9882 10.0355 10.0355ZM10.0355 10.0355L14 14M14 14L14.5 13.5L11.5 10.5M14 14L13.5 14.5L10.5 11.5"
+                  fill="none"
+                />
+              </svg>
+              <input
+                class="searchbar__area"
+                id="input-box1"
+                type="text"
+                placeholder="Номер заказа или ФИО"
+                value=""
+              />
+            </div>
+            <!-- ------------end searchbar empty------------------ -->
+            <!-- -------------start button full------------------- -->
+            <button class="button">
+              <svg class="button__icon" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M12 4H4V5.5L7 8.5V12L9 13V8.5L12 5.5V4Z"
+                  stroke="none"
+                />
+              </svg>
+              <span class="button__text">Фильтры</span>
+            </button>
+            <!-- -------------end button full------------------ -->
+            <!-- -----------start button only text------------- -->
+            <button class="button button_transparent-blue">
+              <span class="button__text">Сбросить фильтры</span>
+            </button>
+            <!-- -----------end button only text--------------- -->
+          </div>
+          <div class="filter__item">
+            <!-- -------------start button full-------------- -->
+            <button class="button button_transparent-blue">
+              <svg class="button__icon" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M2.50251 7.5V8.5C2.50251 10.75 4.75251 13.5 8.00251 13.5C10 13.5 11.6187 12.5 12.6 11"
+                  fill="none"
+                />
+                <path
+                  d="M13.5 8.5V7.5C13.5 5.25 11.25 2.5 7.99997 2.5C6 2.5 4.38135 3.5 3.4 5"
+                  fill="none"
+                />
+                <path d="M4.5 9.5L2.50254 7.5L0.752533 9.75" fill="none" />
+                <path d="M11.5 6.5L13.5 8.5L15.25 6.25" fill="none" />
+              </svg>
+              <span class="button__text">Загрузка</span>
+            </button>
+            <!-- ---------------end button full-------------- -->
+          </div>
+        </div>
+        <!-- ------------filter search------------------ -->
+        <!-- -------------filter input------------------ -->
+        <div class="filter__wrapper filter__wrapper_input">
+          <div class="filter__item-input">
+            <!-- ------------start input empty---------------- -->
+            <div class="input input_empty">
+              <label class="input__label" for="input-box1"
+                >Дата оформления</label
+              >
+              <div class="input__item">
+                <span>c</span>
+                <input
+                  class="input__area"
+                  id="input-box1"
+                  type="text"
+                  size="7"
+                  placeholder=""
+                  value="21.01.2021"
+                />
+                <button
+                  class="button button_icon-only button_transparent-blue button_small"
+                >
+                  <svg
+                    class="button__icon"
+                    viewBox="0 0 16 16"
+                    fill="none"
+                    stroke="#8055FF"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M12.5 3.5L3.5 12.5M3.5 3.5L12.5 12.5"
+                      fill="none"
+                    />
+                  </svg>
+                </button>
+              </div>
+            </div>
+            <!-- ------------end input empty---------------- -->
+            <!-- ------------start input empty---------------- -->
+            <div class="input input_empty">
+              <label class="input__label" for="input-box1"></label>
+              <div class="input__item">
+                <span>по</span>
+                <input
+                  class="input__area"
+                  id="input-box1"
+                  type="text"
+                  size="7"
+                  placeholder="dd.mm.yyyy"
+                  value=""
+                />
+              </div>
+            </div>
+          </div>
+          <!-- ------------end input empty---------------- -->
+          <!-- ------------start input empty---------------- -->
+          <div class="input input_empty input_filter__wrapper">
+            <label class="input__label" for="input-box1">Статус заказа</label>
+            <div class="input__item">
+              <input
+                class="input__area"
+                id="input-box1"
+                type="text"
+                size="13"
+                placeholder=""
+                value="Любой"
+              />
+              <button
+                class="button button_icon-only button_transparent-blue button_small"
+              >
+                <svg
+                  class="button__icon"
+                  stroke="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path d="M5 6H11V6.5L8.25 11H7.75L5 6.5V6Z" stroke="none" />
+                </svg>
+              </button>
+            </div>
+            <!-- ----------statrt status multiple---------------- -->
+            <div class="status-multiple status-multiple_filter">
+              <!-- --------------------checkbox-------------------- -->
+              <label>
+                <div class="checkbox checkbox_status-multiple">
+                  <input class="checkbox__input" type="checkbox" />
+                  <svg
+                    class="checkbox__icon"
+                    viewBox="0 0 16 16"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M7 10L4.5 6L3 7L7 14L14.5 3.5V3L13 2L7 10Z"
+                      stroke="none"
+                    />
+                  </svg>
+                  <span class="checkbox__text">Новый</span>
+                </div>
+              </label>
+              <!-- --------------------checkbox-------------------- -->
+              <!-- --------------------checkbox-------------------- -->
+              <label>
+                <div class="checkbox checkbox_status-multiple">
+                  <input class="checkbox__input" type="checkbox" />
+                  <svg
+                    class="checkbox__icon"
+                    viewBox="0 0 16 16"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M7 10L4.5 6L3 7L7 14L14.5 3.5V3L13 2L7 10Z"
+                      stroke="none"
+                    />
+                  </svg>
+                  <span class="checkbox__text">Рассчёт</span>
+                </div>
+              </label>
+              <!-- --------------------checkbox-------------------- -->
+              <!-- --------------------checkbox-------------------- -->
+              <label>
+                <div class="checkbox checkbox_status-multiple">
+                  <input class="checkbox__input" type="checkbox" checked />
+                  <svg
+                    class="checkbox__icon"
+                    viewBox="0 0 16 16"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M7 10L4.5 6L3 7L7 14L14.5 3.5V3L13 2L7 10Z"
+                      stroke="none"
+                    />
+                  </svg>
+                  <span class="checkbox__text">Подтверждён</span>
+                </div>
+              </label>
+              <!-- --------------------checkbox-------------------- -->
+              <!-- --------------------checkbox-------------------- -->
+              <label>
+                <div class="checkbox checkbox_status-multiple">
+                  <input class="checkbox__input" type="checkbox" />
+                  <svg
+                    class="checkbox__icon"
+                    viewBox="0 0 16 16"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M7 10L4.5 6L3 7L7 14L14.5 3.5V3L13 2L7 10Z"
+                      stroke="none"
+                    />
+                  </svg>
+                  <span class="checkbox__text">Отложен</span>
+                </div>
+              </label>
+              <!-- --------------------checkbox-------------------- -->
+              <!-- --------------------checkbox-------------------- -->
+              <label>
+                <div class="checkbox checkbox_status-multiple">
+                  <input class="checkbox__input" type="checkbox" />
+                  <svg
+                    class="checkbox__icon"
+                    viewBox="0 0 16 16"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M7 10L4.5 6L3 7L7 14L14.5 3.5V3L13 2L7 10Z"
+                      stroke="none"
+                    />
+                  </svg>
+                  <span class="checkbox__text">Выполнен</span>
+                </div>
+              </label>
+              <!-- --------------------checkbox-------------------- -->
+              <!-- --------------------checkbox-------------------- -->
+              <label>
+                <div class="checkbox checkbox_status-multiple">
+                  <input class="checkbox__input" type="checkbox" />
+                  <svg
+                    class="checkbox__icon"
+                    viewBox="0 0 16 16"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M7 10L4.5 6L3 7L7 14L14.5 3.5V3L13 2L7 10Z"
+                      stroke="none"
+                    />
+                  </svg>
+                  <span class="checkbox__text">Отменён</span>
+                </div>
+              </label>
+              <!-- --------------------checkbox-------------------- -->
+            </div>
+            <!-- -------------end status-multiple---------------- -->
+          </div>
+          <!-- ------------end input empty---------------- -->
+          <div class="filter__item-input">
+            <!-- ------------start input empty---------------- -->
+            <div class="input input_empty">
+              <label class="input__label" for="input-box1">Сумма заказа</label>
+              <div class="input__item">
+                <span>от</span>
+                <input
+                  class="input__area"
+                  id="input-box1"
+                  type="text"
+                  size="7"
+                  placeholder=""
+                  value="5000"
+                />
+                <button
+                  class="button button_icon-only button_transparent-blue button_small"
+                >
+                  <svg
+                    class="button__icon"
+                    viewBox="0 0 16 16"
+                    fill="none"
+                    stroke="#8055FF"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M12.5 3.5L3.5 12.5M3.5 3.5L12.5 12.5"
+                      fill="none"
+                    />
+                  </svg>
+                </button>
+              </div>
+            </div>
+            <!-- ------------end input empty---------------- -->
+            <!-- ------------start input empty---------------- -->
+            <div class="input input_empty">
+              <label class="input__label" for="input-box1"></label>
+              <div class="input__item">
+                <span>до</span>
+                <input
+                  class="input__area"
+                  id="input-box1"
+                  type="text"
+                  size="7"
+                  placeholder="₽"
+                  value=""
+                />
+              </div>
+            </div>
+          </div>
+          <!-- ------------end input empty---------------- -->
+          <!-- -------------start button only text--------- -->
+          <button class="button button_transparent-blue">
+            <span class="button__text">Применить</span>
+          </button>
+          <!-- -------------end button only text----------- -->
+        </div>
+        <!-- -------------filter input------------------ -->
+      </div>
+      <!-- -------------------FILTER-------------------------- -->
+
+      <!-- ---------------------TABLE------------------------- -->
+      <div class="table">
+        <div class="table__header">
+          <div class="table__cell table__cell_first">
+            <!-- --------------------checkbox-------------------- -->
+            <label>
+              <div class="checkbox">
+                <input class="checkbox__input" type="checkbox" />
+                <svg
+                  class="checkbox__icon"
+                  viewBox="0 0 16 16"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M7 10L4.5 6L3 7L7 14L14.5 3.5V3L13 2L7 10Z"
+                    stroke="none"
+                  />
+                </svg>
+                <span class="checkbox__text"></span>
+              </div>
+            </label>
+            <!-- --------------------checkbox-------------------- -->
+          </div>
+          <div class="table__cell table__cell_second">
+            <span>#</span>
+          </div>
+          <div class="table__cell table__cell_third">
+            <span>Дата</span>
+            <svg class="table__icon" xmlns="http://www.w3.org/2000/svg">
+              <path d="M5 6H11V6.5L8.25 11H7.75L5 6.5V6Z" stroke="none" />
+            </svg>
+          </div>
+          <div class="table__cell table__cell_fourth">
+            <span>Статус</span>
+            <svg class="table__icon" xmlns="http://www.w3.org/2000/svg">
+              <path d="M5 6H11V6.5L8.25 11H7.75L5 6.5V6Z" stroke="none" />
+            </svg>
+          </div>
+          <div class="table__cell table__cell_fifth">
+            <span>Позиций</span>
+            <svg class="table__icon" xmlns="http://www.w3.org/2000/svg">
+              <path d="M5 6H11V6.5L8.25 11H7.75L5 6.5V6Z" stroke="none" />
+            </svg>
+          </div>
+          <div class="table__cell table__cell_sixth">
+            <span>Сумма</span>
+            <svg class="table__icon" xmlns="http://www.w3.org/2000/svg">
+              <path d="M5 6H11V6.5L8.25 11H7.75L5 6.5V6Z" stroke="none" />
+            </svg>
+          </div>
+          <div class="table__cell table__cell_seventh">
+            <span>ФИО покупателя</span>
+          </div>
+        </div>
+        <div class="table__body">
+          <div class="table__line table__line_first">
+            <div class="table__cell table__cell_first">
+              <!-- --------------------checkbox-------------------- -->
+              <label>
+                <div class="checkbox">
+                  <input class="checkbox__input" type="checkbox" />
+                  <svg
+                    class="checkbox__icon"
+                    viewBox="0 0 16 16"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M7 10L4.5 6L3 7L7 14L14.5 3.5V3L13 2L7 10Z"
+                      stroke="none"
+                    />
+                  </svg>
+                  <span class="checkbox__text"></span>
+                </div>
+              </label>
+              <!-- --------------------checkbox-------------------- -->
+            </div>
+            <div class="table__cell table__cell_second">
+              <span>1270989</span>
+            </div>
+            <div class="table__cell table__cell_third">
+              <span>15.02.2021, 18:00</span>
+            </div>
+            <div class="table__cell table__cell_fourth">
+              <svg
+                class="table__icon"
+                S
+                stroke="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <circle cx="8" cy="8" r="4" stroke="none" />
+              </svg>
+              <span>Отложен</span>
+            </div>
+            <div class="table__cell table__cell_fifth">
+              <span>5</span>
+            </div>
+            <div class="table__cell table__cell_sixth">
+              <span>101 907 ₽</span>
+            </div>
+            <div class="table__cell table__cell_seventh">
+              <span>Чернышев Филлип Семенович</span>
+            </div>
+          </div>
+          <div class="table__line table__line_second">
+            <div class="table__cell table__cell_first">
+              <!-- --------------------checkbox-------------------- -->
+              <label>
+                <div class="checkbox">
+                  <input class="checkbox__input" type="checkbox" />
+                  <svg
+                    class="checkbox__icon"
+                    viewBox="0 0 16 16"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M7 10L4.5 6L3 7L7 14L14.5 3.5V3L13 2L7 10Z"
+                      stroke="none"
+                    />
+                  </svg>
+                  <span class="checkbox__text"></span>
+                </div>
+              </label>
+              <!-- --------------------checkbox-------------------- -->
+            </div>
+            <div class="table__cell table__cell_second">
+              <span>2353474</span>
+            </div>
+            <div class="table__cell table__cell_third">
+              <span>12.03.2021, 05:15</span>
+            </div>
+            <div class="table__cell table__cell_fourth">
+              <svg
+                class="table__icon"
+                S
+                stroke="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <circle cx="8" cy="8" r="4" stroke="none" />
+              </svg>
+              <span>Отложен</span>
+            </div>
+            <div class="table__cell table__cell_fifth">
+              <span>2</span>
+            </div>
+            <div class="table__cell table__cell_sixth">
+              <span>98 003 ₽</span>
+            </div>
+            <div class="table__cell table__cell_seventh">
+              <span>Филлипов Степан Васильевич</span>
+            </div>
+          </div>
+          <div class="table__line table__line_third">
+            <div class="table__cell table__cell_first">
+              <!-- --------------------checkbox-------------------- -->
+              <label>
+                <div class="checkbox">
+                  <input class="checkbox__input" type="checkbox" />
+                  <svg
+                    class="checkbox__icon"
+                    viewBox="0 0 16 16"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M7 10L4.5 6L3 7L7 14L14.5 3.5V3L13 2L7 10Z"
+                      stroke="none"
+                    />
+                  </svg>
+                  <span class="checkbox__text"></span>
+                </div>
+              </label>
+              <!-- --------------------checkbox-------------------- -->
+            </div>
+            <div class="table__cell table__cell_second">
+              <span>1103397</span>
+            </div>
+            <div class="table__cell table__cell_third">
+              <span>03.02.2021, 08:04</span>
+            </div>
+            <div class="table__cell table__cell_fourth">
+              <svg
+                class="table__icon"
+                S
+                stroke="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <circle cx="8" cy="8" r="4" stroke="none" />
+              </svg>
+              <span>Подтверждён</span>
+            </div>
+            <div class="table__cell table__cell_fifth">
+              <span>5</span>
+            </div>
+            <div class="table__cell table__cell_sixth">
+              <span>3 800 ₽</span>
+            </div>
+            <div class="table__cell table__cell_seventh">
+              <span>Тихонова Алина Давидовна</span>
+            </div>
+          </div>
+          <div class="table__line table__line_fourth">
+            <div class="table__cell table__cell_first">
+              <!-- --------------------checkbox-------------------- -->
+              <label>
+                <div class="checkbox">
+                  <input class="checkbox__input" type="checkbox" />
+                  <svg
+                    class="checkbox__icon"
+                    viewBox="0 0 16 16"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M7 10L4.5 6L3 7L7 14L14.5 3.5V3L13 2L7 10Z"
+                      stroke="none"
+                    />
+                  </svg>
+                  <span class="checkbox__text"></span>
+                </div>
+              </label>
+              <!-- --------------------checkbox-------------------- -->
+            </div>
+            <div class="table__cell table__cell_second">
+              <span>6924662</span>
+            </div>
+            <div class="table__cell table__cell_third">
+              <span>21.01.2021, 13:32</span>
+            </div>
+            <div class="table__cell table__cell_fourth">
+              <svg class="table__icon" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M7 10L4.5 6L3 7L7 14L14.5 3.5V3L13 2L7 10Z"
+                  stroke="none"
+                />
+              </svg>
+              <span>Выполнен</span>
+            </div>
+            <div class="table__cell table__cell_fifth">
+              <span>1</span>
+            </div>
+            <div class="table__cell table__cell_sixth">
+              <span>5 700 ₽</span>
+            </div>
+            <div class="table__cell table__cell_seventh">
+              <span>Александрова Юлия Никитична</span>
+            </div>
+          </div>
+          <div class="table__line table__line_fifth">
+            <div class="table__cell table__cell_first">
+              <!-- --------------------checkbox-------------------- -->
+              <label>
+                <div class="checkbox">
+                  <input class="checkbox__input" type="checkbox" />
+                  <svg
+                    class="checkbox__icon"
+                    viewBox="0 0 16 16"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M7 10L4.5 6L3 7L7 14L14.5 3.5V3L13 2L7 10Z"
+                      stroke="none"
+                    />
+                  </svg>
+                  <span class="checkbox__text"></span>
+                </div>
+              </label>
+              <!-- --------------------checkbox-------------------- -->
+            </div>
+            <div class="table__cell table__cell_second">
+              <span>2200086</span>
+            </div>
+            <div class="table__cell table__cell_third">
+              <span>19.01.2021, 10:21</span>
+            </div>
+            <div class="table__cell table__cell_fourth">
+              <svg
+                class="table__icon"
+                fill="none"
+                stroke="#8055FF"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path d="M12.5 12.5L3.5 3.5" fill="none" stroke="#000000" />
+                <circle cx="8" cy="8" r="6.5" fill="none" />
+              </svg>
+              <span>Отменён</span>
+            </div>
+            <div class="table__cell table__cell_fifth">
+              <span>-</span>
+            </div>
+            <div class="table__cell table__cell_sixth">
+              <span>-</span>
+            </div>
+            <div class="table__cell table__cell_seventh">
+              <span>Андрей</span>
+            </div>
+          </div>
+          <div class="table__line table__line_sixth">
+            <div class="table__cell table__cell_first">
+              <!-- --------------------checkbox-------------------- -->
+              <label>
+                <div class="checkbox">
+                  <input class="checkbox__input" type="checkbox" />
+                  <svg
+                    class="checkbox__icon"
+                    viewBox="0 0 16 16"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M7 10L4.5 6L3 7L7 14L14.5 3.5V3L13 2L7 10Z"
+                      stroke="none"
+                    />
+                  </svg>
+                  <span class="checkbox__text"></span>
+                </div>
+              </label>
+              <!-- --------------------checkbox-------------------- -->
+            </div>
+            <div class="table__cell table__cell_second">
+              <span>2842064</span>
+            </div>
+            <div class="table__cell table__cell_third">
+              <span>04.01.2021, 12:12</span>
+            </div>
+            <div class="table__cell table__cell_fourth">
+              <svg
+                class="table__icon"
+                S
+                stroke="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <circle cx="8" cy="8" r="4" stroke="none" />
+              </svg>
+              <span>Отложен</span>
+            </div>
+            <div class="table__cell table__cell_fifth">
+              <span>1</span>
+            </div>
+            <div class="table__cell table__cell_sixth">
+              <span>20 500 ₽</span>
+            </div>
+            <div class="table__cell table__cell_seventh">
+              <span>Судакова Анастасия Ильинична</span>
+            </div>
+          </div>
+          <div class="table__line table__line_seventh">
+            <div class="table__cell table__cell_first">
+              <!-- --------------------checkbox-------------------- -->
+              <label>
+                <div class="checkbox">
+                  <input class="checkbox__input" type="checkbox" />
+                  <svg
+                    class="checkbox__icon"
+                    viewBox="0 0 16 16"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M7 10L4.5 6L3 7L7 14L14.5 3.5V3L13 2L7 10Z"
+                      stroke="none"
+                    />
+                  </svg>
+                  <span class="checkbox__text"></span>
+                </div>
+              </label>
+              <!-- --------------------checkbox-------------------- -->
+            </div>
+            <div class="table__cell table__cell_second">
+              <span>1730071</span>
+            </div>
+            <div class="table__cell table__cell_third">
+              <span>17.12.2020, 20:45</span>
+            </div>
+            <div class="table__cell table__cell_fourth">
+              <svg class="table__icon" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M7 10L4.5 6L3 7L7 14L14.5 3.5V3L13 2L7 10Z"
+                  stroke="none"
+                />
+              </svg>
+              <span>Выполнен</span>
+            </div>
+            <div class="table__cell table__cell_fifth">
+              <span>1</span>
+            </div>
+            <div class="table__cell table__cell_sixth">
+              <span>1 399 ₽</span>
+            </div>
+            <div class="table__cell table__cell_seventh">
+              <span>Зверева Арина Николаевна</span>
+            </div>
+          </div>
+          <div class="table__line table__line_eighth">
+            <div class="table__cell table__cell_first">
+              <!-- --------------------checkbox-------------------- -->
+              <label>
+                <div class="checkbox">
+                  <input class="checkbox__input" type="checkbox" />
+                  <svg
+                    class="checkbox__icon"
+                    viewBox="0 0 16 16"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M7 10L4.5 6L3 7L7 14L14.5 3.5V3L13 2L7 10Z"
+                      stroke="none"
+                    />
+                  </svg>
+                  <span class="checkbox__text"></span>
+                </div>
+              </label>
+              <!-- --------------------checkbox-------------------- -->
+            </div>
+            <div class="table__cell table__cell_second">
+              <span>7987376</span>
+            </div>
+            <div class="table__cell table__cell_third">
+              <span>07.12.2020, 08:57</span>
+            </div>
+            <div class="table__cell table__cell_fourth">
+              <svg class="table__icon" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M7 10L4.5 6L3 7L7 14L14.5 3.5V3L13 2L7 10Z"
+                  stroke="none"
+                />
+              </svg>
+              <span>Выполнен</span>
+            </div>
+            <div class="table__cell table__cell_fifth">
+              <span>3</span>
+            </div>
+            <div class="table__cell table__cell_sixth">
+              <span>117 809 ₽</span>
+            </div>
+            <div class="table__cell table__cell_seventh">
+              <span>Карташов Максим Кириллович</span>
+            </div>
+          </div>
+          <div class="table__line table__line_ninth">
+            <div class="table__cell table__cell_first">
+              <!-- --------------------checkbox-------------------- -->
+              <label>
+                <div class="checkbox">
+                  <input class="checkbox__input" type="checkbox" />
+                  <svg
+                    class="checkbox__icon"
+                    viewBox="0 0 16 16"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M7 10L4.5 6L3 7L7 14L14.5 3.5V3L13 2L7 10Z"
+                      stroke="none"
+                    />
+                  </svg>
+                  <span class="checkbox__text"></span>
+                </div>
+              </label>
+              <!-- --------------------checkbox-------------------- -->
+            </div>
+            <div class="table__cell table__cell_second">
+              <span>1373265</span>
+            </div>
+            <div class="table__cell table__cell_third">
+              <span>15.11.2020, 14:26</span>
+            </div>
+            <div class="table__cell table__cell_fourth">
+              <svg
+                class="table__icon"
+                S
+                stroke="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <circle cx="8" cy="8" r="4" stroke="none" />
+              </svg>
+              <span>Отклонён</span>
+            </div>
+            <div class="table__cell table__cell_fifth">
+              <span>1</span>
+            </div>
+            <div class="table__cell table__cell_sixth">
+              <span>17 008 ₽</span>
+            </div>
+            <div class="table__cell table__cell_seventh">
+              <span>Васильев Вадим Данилович</span>
+            </div>
+          </div>
+          <div class="table__line table__line_tenth">
+            <div class="table__cell table__cell_first">
+              <!-- --------------------checkbox-------------------- -->
+              <label>
+                <div class="checkbox">
+                  <input class="checkbox__input" type="checkbox" />
+                  <svg
+                    class="checkbox__icon"
+                    viewBox="0 0 16 16"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M7 10L4.5 6L3 7L7 14L14.5 3.5V3L13 2L7 10Z"
+                      stroke="none"
+                    />
+                  </svg>
+                  <span class="checkbox__text"></span>
+                </div>
+              </label>
+              <!-- --------------------checkbox-------------------- -->
+            </div>
+            <div class="table__cell table__cell_second">
+              <span>1270989</span>
+            </div>
+            <div class="table__cell table__cell_third">
+              <span>15.02.2021, 18:00</span>
+            </div>
+            <div class="table__cell table__cell_fourth">
+              <svg
+                class="table__icon"
+                fill="none"
+                stroke="#8055FF"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path d="M12.5 12.5L3.5 3.5" fill="none" stroke="#000000" />
+                <circle cx="8" cy="8" r="6.5" fill="none" />
+              </svg>
+              <span>Отменён</span>
+            </div>
+            <div class="table__cell table__cell_fifth">
+              <span>-</span>
+            </div>
+            <div class="table__cell table__cell_sixth">
+              <span>-</span>
+            </div>
+            <div class="table__cell table__cell_seventh">
+              <span>София</span>
+            </div>
+          </div>
+        </div>
+        <div class="table__footer">
+          <div class="table__bunch-action">
+            <span>Выбрано записей: 5</span>
+            <!-- -------------start button full------------ -->
+            <button class="button button_small">
+              <svg
+                class="button__icon"
+                viewBox="0 0 16 16"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path d="M6 14.5H15" fill="none" />
+                <path
+                  d="M5 13L1.5 14.5L3 11M5 13L3 11M5 13L12 6M3 11L10 4M11 3L12.5 1.5L14.5 3.5L13 5M11 3L13 5M11 3L10 4M13 5L12 6M12 6L10 4"
+                  fill="none"
+                />
+              </svg>
+              <span class="button__text">Изменить статус</span>
+            </button>
+            <!-- -------------end button full-------------- -->
+            <!-- -------------start button full------------ -->
+            <button class="button button_small button_delete">
+              <svg class="button__icon" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M2 3.5H3.5M14 3.5H12.5M5.5 3.5H10.5M5.5 3.5V2.5C5.5 1.94772 5.94772 1.5 6.5 1.5H9.5C10.0523 1.5 10.5 1.94772 10.5 2.5V3.5M5.5 3.5H3.5M10.5 3.5H12.5M3.5 3.5V13.5C3.5 14.0523 3.94772 14.5 4.5 14.5H11.5C12.0523 14.5 12.5 14.0523 12.5 13.5V3.5"
+                  fill="none"
+                  stroke-linecap="round"
+                />
+                <path
+                  d="M6.5 6V12M9.5 6V12"
+                  fill="none"
+                  stroke-linecap="round"
+                />
+              </svg>
+              <span class="button__text">Удалить</span>
+            </button>
+            <!-- -------------end button full-------------- -->
+            <!-- ----------start table activ-delete ------------- -->
+            <div class="table-activ-delete">
+              <span class="table-activ-delete__text">Удалить n записей?</span>
+              <!-- -start button only text transparent blue-- -->
+              <button
+                class="button button_transparent-blue button_small button_table-activ-delete"
+              >
+                <span class="button__text">Удалить</span>
+              </button>
+              <!-- --end button only text transparent blue--- -->
+              <!-- ---------start button only text----------- -->
+              <button class="button button_small button_table-activ-delete">
+                <span class="button__text">Отмена</span>
+              </button>
+              <!-- ----------end button only text------------ -->
+            </div>
+            <!-- -----------end table activ-delete -------------- -->
+          </div>
+          <div class="table__pagination">
+            <!-- ---------start button only text----------- -->
+            <button class="button button_transparent-blue button_small">
+              <span class="button__text">1</span>
+            </button>
+            <!-- ----------end button only text------------ -->
+            <!-- ---------start button only text----------- -->
+            <button class="button button_transparent-blue button_small">
+              <span class="button__text">2</span>
+            </button>
+            <!-- ----------end button only text------------ -->
+            <!-- ---------start button only text----------- -->
+            <button class="button button_transparent-blue button_small">
+              <span class="button__text">3</span>
+            </button>
+            <!-- ----------end button only text------------ -->
+            <span>...</span>
+            <!-- ---------start button only text----------- -->
+            <button class="button button_transparent-blue button_small">
+              <span class="button__text">18</span>
+            </button>
+            <!-- ----------end button only text------------ -->
+            <!-- ---------start button only text----------- -->
+            <button class="button button_transparent-blue button_small">
+              <span class="button__text">#</span>
+            </button>
+            <!-- ----------end button only text------------ -->
+          </div>
+        </div>
+      </div>
+      <!-- ---------------------TABLE------------------------- -->
+    </div>
+  </body>
+</html>

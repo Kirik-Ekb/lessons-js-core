@@ -10,6 +10,9 @@
   --item-border-color: #bad8f5;
   --item-backgroung-color-activ: #459df5;
   --button-color-text-black: #000000;
+  --backgrond-color-filter-wrapper: #ebf0f5;
+  --color-table-icon: #ff8c56;
+  --color-table-icon-green: #0fb864;
 }
 @import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap");
 
