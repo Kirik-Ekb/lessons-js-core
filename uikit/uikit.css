@@ -13,6 +13,11 @@
   --backgrond-color-filter-wrapper: #ebf0f5;
   --color-table-icon: #ff8c56;
   --color-table-icon-green: #0fb864;
+  --background-night: #2b2d33;
+  --background-night-filter: #171b1f;
+  --color-text-night: #454e52;
+  --color-icon-night: #2b2d33;
+  --color-text-label: #bcc4cc;
 }
 @import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap");
 
