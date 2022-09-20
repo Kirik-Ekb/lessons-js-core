@@ -1,0 +1,100 @@
+.status-multiple {
+  position: absolute;
+  top: 4rem;
+  left: 3rem;
+  display: flex;
+  flex-direction: column;
+  width: 10rem;
+  background-color: var(--item-background-color);
+  justify-content: space-between;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  border-radius: 0.5rem;
+}
+.checkbox_status-multiple {
+  height: 2rem;
+  margin-left: 1rem;
+  padding-top: 0.5rem;
+  box-sizing: border-box;
+}
+
+.status-single {
+  position: absolute;
+  top: 4rem;
+  left: 16rem;
+  display: flex;
+  flex-direction: column;
+  width: 10rem;
+  background-color: var(--item-background-color);
+  justify-content: space-between;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  border-radius: 0.5rem;
+}
+.radio_status-single {
+  height: 2rem;
+  margin-left: 1rem;
+  padding-top: 0.5rem;
+  box-sizing: border-box;
+}
+.radio_status-single .radio__input {
+  display: none;
+}
+.radio_status-single .radio__text {
+  padding: 0;
+}
+.radio_status-single .radio__label {
+  border: none;
+}
+.radio__input:checked ~ .radio__text {
+  color: var(--item-backgroung-color-activ);
+}
+.go-to-page {
+  position: absolute;
+  top: 22rem;
+  left: 3rem;
+  width: 10rem;
+  background-color: var(--item-background-color);
+  padding: 1rem;
+  border-radius: 0.5rem;
+  box-sizing: border-box;
+}
+.table-activ-delete {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  top: 22rem;
+  left: 16rem;
+  width: 10rem;
+  background-color: var(--item-background-color);
+  padding: 1rem;
+  border-radius: 0.5rem;
+  box-sizing: border-box;
+}
+.table-activ-delete__text {
+  font-family: "Ubuntu", sans-serif;
+  font-size: 0.8125rem;
+}
+.button_table-activ-delete {
+  width: 100%;
+}
+.theme-switcher {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  top: 22rem;
+  left: 29rem;
+  width: 10rem;
+  background-color: var(--item-background-color);
+  padding: 1rem;
+  border-radius: 0.5rem;
+  box-sizing: border-box;
+}
+.button_theme-switcher {
+  width: 100%;
+}
+.button_theme-switcher .button__icon {
+  opacity: 100%;
+}

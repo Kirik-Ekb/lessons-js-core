@@ -1,0 +1,108 @@
+:root {
+  --uikit-area-background-color: #e5e5e5;
+  --uikit-area-border-color: #8055ff;
+  --button-area-background-color: #459df5;
+  --input-border-color: #459df5;
+  --input-border-color-active: #f53152;
+  --placeholder-color: #bad8f5;
+  --placeholder-color-black: #000000;
+  --input-background-color-disable: #bad8f5;
+  --item-background-color: #ffffff;
+  --item-border-color: #bad8f5;
+  --item-backgroung-color-activ: #459df5;
+  --button-color-text-black: #000000;
+  --backgrond-color-filter-wrapper: #ebf0f5;
+  --color-table-icon: #ff8c56;
+  --color-table-icon-green: #0fb864;
+  --background-night: #2b2d33;
+  --background-night-filter: #171b1f;
+  --color-text-night: #454e52;
+  --color-icon-night: #2b2d33;
+  --color-text-label: #bcc4cc;
+}
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap");
+.body {
+  font-family: "Ubuntu", sans-serif;
+  font-size: 0.8125rem;
+}
+.conteiner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--uikit-area-background-color);
+  border: 0.0625rem dashed var(--uikit-area-border-color);
+  border-radius: 0.3125rem;
+  box-sizing: border-box;
+}
+.conteiner-main {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 2rem;
+  padding: 2rem 2rem 5rem 2rem;
+  background-color: var(--uikit-area-background-color);
+}
+.conteiner_button-block {
+  width: 36rem;
+  height: 23.5rem;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 2rem;
+  padding: 2.9375rem 5.9375rem 2.9375rem 2.9375rem;
+}
+.conteiner_button {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1rem;
+  width: 7rem;
+}
+.conteiner_input {
+  width: 22rem;
+  height: 22.5rem;
+  padding: 3rem;
+}
+
+.checkbox_conteiner {
+  width: 6.5rem;
+  height: 4rem;
+  padding: 1.4375rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.radio_conteiner {
+  width: 6.5rem;
+  height: 4rem;
+  padding: 1.4375rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.searchbar_conteiner {
+  width: 22rem;
+  height: 12rem;
+  padding: 2.9375rem;
+  gap: 0.5rem;
+}
+.conteiner_input {
+  width: 22rem;
+  height: 22.5rem;
+  padding: 3rem;
+}
+
+.dropdowns_conteiner {
+  position: relative;
+  width: 42rem;
+  height: 32rem;
+}
+.page-heder_conteiner {
+  position: relative;
+  width: 49.125rem;
+  height: 13rem;
+  padding: 3rem;
+}

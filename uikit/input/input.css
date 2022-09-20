@@ -1,0 +1,64 @@
+.input {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: -webkit-fill-available;
+  height: 3.5rem;
+  font-family: "Ubuntu", sans-serif;
+  font-size: 0.8125rem;
+}
+.input__label {
+  height: 1rem;
+}
+.input__item {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 0.5rem;
+  height: 2rem;
+  gap: 0.25rem;
+  padding: 0.1875rem 0.1875rem 0.1875rem 0.4375rem;
+  background-color: var(--item-background-color);
+  border: 0.0625rem solid var(--input-border-color);
+  border-radius: 0.25rem;
+  box-sizing: border-box;
+}
+.input__area {
+  flex: 1 1 auto;
+  max-width: 100%;
+  height: 1rem;
+  margin: 0;
+  padding: 0;
+  outline: none;
+  border: none;
+  line-height: 1rem;
+  font-family: inherit;
+}
+.input__area::placeholder {
+  color: var(--placeholder-color);
+}
+.input_empty .button {
+  display: none;
+}
+.input_incorrect .input__item {
+  border-color: var(--input-border-color-active);
+}
+
+.input_disabled .input__item {
+  background-color: var(--input-background-color-disable);
+}
+.input_disabled .input__area {
+  background-color: var(--input-background-color-disable);
+}
+.input_disabled .button__icon {
+  fill: var(--button-color-text-black);
+  stroke: var(--button-color-text-black);
+  opacity: 100%;
+}
+.input_disabled .input__area {
+  color: var(--placeholder-color-black);
+}
+.input_empty .input__area:focus-within ~ .button {
+  display: block;
+}
