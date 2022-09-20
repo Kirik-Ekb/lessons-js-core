@@ -17,7 +17,7 @@
   outline: none;
   border: none;
   padding: 0;
-  font-family: "Ubuntu";
+  font-family: "Ubuntu", sans-serif;
   font-size: 0.8125rem;
 }
 .searchbar__icon {

@@ -5,6 +5,7 @@
   --input-border-color: #459df5;
   --input-border-color-active: #f53152;
   --placeholder-color: #bad8f5;
+  --placeholder-color-black: #000000;
   --input-background-color-disable: #bad8f5;
   --item-background-color: #ffffff;
   --item-border-color: #bad8f5;
@@ -20,7 +21,10 @@
   --color-text-label: #bcc4cc;
 }
 @import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap");
-
+.body {
+  font-family: "Ubuntu", sans-serif;
+  font-size: 0.8125rem;
+}
 .conteiner {
   display: flex;
   flex-direction: column;

@@ -19,7 +19,7 @@
   opacity: 50%;
 }
 .button__text {
-  font-family: "Ubuntu";
+  font-family: "Ubuntu", sans-serif;
   font-style: normal;
   font-size: 0.8125rem;
   font-weight: 400;

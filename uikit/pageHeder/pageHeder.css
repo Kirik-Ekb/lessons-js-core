@@ -6,7 +6,7 @@
   align-items: center;
 }
 .show-switcher__text {
-  font-family: "Ubuntu";
+  font-family: "Ubuntu", sans-serif;
   font-size: 1.625rem;
   font-weight: bold;
   line-height: 1rem;

@@ -4,7 +4,7 @@
   justify-content: space-between;
   width: -webkit-fill-available;
   height: 3.5rem;
-  font-family: "Ubuntu";
+  font-family: "Ubuntu", sans-serif;
   font-size: 0.8125rem;
 }
 .input__label {
@@ -54,6 +54,10 @@
 .input_disabled .button__icon {
   fill: var(--button-color-text-black);
   stroke: var(--button-color-text-black);
+  opacity: 100%;
+}
+.input_disabled .input__area {
+  color: var(--placeholder-color-black);
 }
 .input_empty .input__area:focus-within ~ .button {
   display: block;
